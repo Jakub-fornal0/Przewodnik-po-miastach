@@ -1,0 +1,22 @@
+            <section class="py-5">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="text-center mb-5">
+                                <h1 class="fw-bolder">Kraków</h1>
+                                <p class="lead fw-normal text-muted mb-0">Magiczny Kraków</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gx-5">
+                        <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="zdjecia/krakow1300x700.jpg" alt="..." /></div>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="text-center mb-5">
+                                <p class="lead fw-normal text-muted">Miasto położone jest w południowej Polsce, nad królową polskich rzek, Wisłą. Jest drugim pod względem liczby ludności oraz powierzchni miastem w kraju. Atrakcyjne położenie na zbiegu kilku zróżnicowanych krain geograficznych, m.in. słynnej Wyżyny Krakowsko-Częstochowskiej, sprawia, że Kraków to doskonała baza wypadowa w jedne z najbardziej urokliwych zakątków Polski. Kraków jest jednym z najstarszych miast Polski, zaś najstarszym ośrodkiem osadniczym był ten na Wawelu - był to jeden z grodów plemiennych Wiślan. Gród od około 990 roku znajdował się pod panowaniem Piastów i już wówczas stał się jedną z ważniejszych siedzib państwa. Pierwsze wzmianki na temat Krakowa pochodzą ze słynnego dokumentu Dagome iudex z roku 991 lub 992. Miasto otrzymało przywilej lokacyjny na prawie magdeburskim w roku 1257 i zostało wówczas zasiedlone głównie przez ludność przybyłą z Niemiec i Śląska. Ciekawostką jest, iż w związku z tym faktem mieszkańcy Krakowa aż do XVI wieku posługiwali się głównie językiem niemieckim. Kolejną ciekawostką jest to, że mniej więcej w tym czasie Wawel i Kraków oddzielone były od siebie osadą o nazwie Okół. Nieistniejąca już osada to nic innego jak obecna południowa część Starego Miasta. Z kolei w XIV wieku na ówczesnych przedmieściach Krakowa rozwinęło się miasto, a obecnie jedna ze słynniejszych dzielnic, Kazimierz. Zarówno w XV, jak i XVI wieku Kraków, ze względu na to, iż był stolicą kraju, rozwijał się prężnie jako ośrodek naukowy (uniwersytet założony w 1364 roku), kulturalny, a także handlowy. Pomimo tego, że na przełomie XVI/XVII wieku zaczęto przenosić dwór królewski do Warszawy, Kraków pozostał miejscem pochówków i koronacji królów Polski.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>

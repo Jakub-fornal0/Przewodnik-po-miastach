@@ -1,0 +1,27 @@
+            <section class="py-5">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="text-center mb-5">
+                                <h1 class="fw-bolder">Wrocław</h1>
+                                <p class="lead fw-normal text-muted mb-0">Miasto spotkań</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gx-5">
+                        <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="zdjecia/wroclaw1300x700.jpg" alt="..." /></div>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="text-center mb-5">
+                                <p class="lead fw-normal text-muted">Wrocław, stolica Dolnego Śląska, jest jednym z najstarszych i najpiękniejszych miast w Polsce. Położony u podnóża Sudetów, nad rzeką Odrą , poprzecinany jej licznymi dopływami i kanałami, jest wyjątkowym miastem 12 wysp i ponad stu mostów. Bogata i burzliwa historia miasta wpisana jest w jego mury. Czasy wczesnego średniowiecza przypomina Ostrów Tumski, na którym zachował się w doskonałym stanie jeden z najpiękniejszych w Europie zespołów architektury sakralnej. Inny zabytek z tego okresu wrocławski Ratusz zaliczany jest do najwspanialszych budowli gotyckich w Europie Środkowej. We Wrocławiu można również obejrzeć jedno z największych w Polsce barokowych wnętrz, jakie zachowało się do naszych czasów. Jest nim Aula Leopoldyńska
+mieszcząca się w osiemnastowiecznym gmachu Uniwersytetu. Dawna i współczesna architektura wkomponowana jest w obfitość zieleni.
+Wrocław jest najbardziej zielonym miastem Polski - na 1 mieszkańca przypada 25 m2 zieleni (nie licząc zieleni osiedlowej).
+W centrum miasta rozpościera się założony w XVIII wieku Park Szczytnicki,
+w którym rośnie ponad 370 gatunków drzew i krzewów oraz znajduje się oryginalny Ogród Japoński.
+Zaprojektowany i utrzymywany zgodnie z zasadami japońskiej sztuki ogrodniczej. Goście Wrocławia wspominają go przede wszystkim jako prężny ośrodek kultury. Teatry, opera, teatr muzyczny, filharmonia i liczne kluby, muzea i galerie zapewniają nieprzerwany ciąg wydarzeń artystycznych.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>

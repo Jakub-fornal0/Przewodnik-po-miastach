@@ -1,0 +1,22 @@
+<section class="py-5">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="text-center mb-5">
+                                <h1 class="fw-bolder">Gdańsk</h1>
+                                <p class="lead fw-normal text-muted mb-0">Miasto Wolności</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gx-5">
+                        <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="zdjecia/gdansk1300x700.jpg" alt="..." /></div>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="text-center mb-5">
+                                <p class="lead fw-normal text-muted">Gdańsk to historyczny, tysiącletni ośrodek hanzeatycki, będący stolicą Pomorza Wschodniego, położony w województwie pomorskim, nad Zatoką Gdańską. Wraz z Gdynią i Sopotem tworzy niezwykle atrakcyjne dla turystów Trójmiasto. Gdańsk urzeka przepiękną, zachwycającą architekturą i niecodzienną atmosferą. Od zawsze budził podziw i zachwyt gości, głównie ze względu na jego bogactwo. Dlatego Gdańsk licznie i chętnie odwiedzany jest przez turystów z całej Europy i nie tylko, a ułatwiają to dogodne połączenia powietrzne, lądowe i morskie nawet z najodleglejszymi zakątkami globu. Dawniej przybywali tu przedstawiciele różnorodnych narodowości, a wielu z nich osiadało w Gdańsku na stałe. Wśród nich byli wybitni architekci, których ślady działalności możemy podziwiać do dziś na gdańskich uliczkach. Najpiękniejsze ulice miasta tworzące Trakt Królewski. Biegną od Złotej Bramy do Zielonej Bramy i dalej wzdłuż Motławy pod Żuraw. To tutaj usadowiły się najwspanialsze budowle Gdańska, jak Ratusz czy Dwór Artusa i oczywiście popularna Fontanna z Neptunem, ale każda kamienica ma tu swoją historię i przyciąga uwagę niezwykłymi zdobieniami. Kiedyś było to miejsce handlu, a mieszkali tu najzamożniejsi gdańszczanie. Stojący przy ulicy Szerokiej 67/68 Żuraw to najbardziej charakterystyczna budowla w mieście stanowiąca symbol Gdańska. Był to największy dźwig portowy w średniowiecznej Europie, służył do przeładunku towarów oraz stawiania masztów, a zarazem był bramą miejską. Stojący nad Motławą Żuraw stanowi oddział Narodowego Muzeum Morskiego. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>

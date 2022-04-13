@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Szlakiem najpiękniejszych polskich miast</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <script src="https://maps.google.com/maps/api/js?sensor=false" ></script>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script>
+            function showLocation(position) {
+                var latitude = position.coords.latitude;
+                var longitude = position.coords.longitude;
+                var wspolrzedne = document.getElementById('geo');
+                var wynik = latitude+", "+longitude;
+                wspolrzedne.value = wynik;
+                
+                var szerKra = 50.0341;
+                var dlKra = 19.5611;
+                var obliczenia = Math.sqrt((szerKra-latitude)*(szerKra-latitude)+(dlKra-longitude)*(dlKra-longitude))*73;
+                var wynikKrakow = obliczenia.toFixed(2)+" km";
+                var odlKrakow = document.getElementById('odlkrakow');
+                odlKrakow.value = wynikKrakow;
+                
+                var szerWro = 51.1;
+                var dlWro = 17.0333;
+                var obliczenia = Math.sqrt((szerWro-latitude)*(szerWro-latitude)+(dlWro-longitude)*(dlWro-longitude))*73;
+                var wynikWroclaw = obliczenia.toFixed(2)+" km";
+                var odlWroclaw = document.getElementById('odlwroclaw');
+                odlWroclaw.value = wynikWroclaw;
+                
+                var szerTor = 53.02;
+                var dlTor = 18.36;
+                var obliczenia = Math.sqrt((szerTor-latitude)*(szerTor-latitude)+(dlTor-longitude)*(dlTor-longitude))*73;
+                var wynikTorun = obliczenia.toFixed(2)+" km";
+                var odlTorun = document.getElementById('odltorun');
+                odlTorun.value = wynikTorun;
+                
+                var szerLub = 51.2475;
+                var dlLub = 22.5728;
+                var obliczenia = Math.sqrt((szerLub-latitude)*(szerLub-latitude)+(dlLub-longitude)*(dlLub-longitude))*73;
+                var wynikLublin = obliczenia.toFixed(2)+" km";
+                var odlLublin = document.getElementById('odllublin');
+                odlLublin.value = wynikLublin;
+                
+                var szerGda = 54.35;
+                var dlGda = 18.6667;
+                var obliczenia = Math.sqrt((szerGda-latitude)*(szerGda-latitude)+(dlGda-longitude)*(dlGda-longitude))*73;
+                var wynikGdansk = obliczenia.toFixed(2)+" km";
+                var odlGdansk = document.getElementById('odlgdansk');
+                odlGdansk.value = wynikGdansk;     
+                
+                var wspolrzedne = new google.maps.LatLng(latitude,longitude);
+                var opcjeMapy = {
+                 zoom: 10,
+                 center: wspolrzedne,
+                 mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                var mapa = new
+                 google.maps.Map(document.getElementById("mapka"),
+                opcjeMapy);
+            }
+            
+            function errorHandler(error) {
+                var output = document.getElementById("geo");
+                switch (error.code) {
+                    case error.PERMISSION_DENIED:
+                        output.innerHTML = "Użytkownik nie udostępnił danych.";
+                        break;
+                    case error.POSITION_UNAVAILABLE:
+                        output.innerHTML = "Dane lokalizacyjne niedostępne.";
+                        break;
+                    case error.TIMEOUT:
+                        output.innerHTML = "Przekroczono czas żądania.";
+                        break;
+                    case error.UNKNOWN_ERROR:
+                        output.innerHTML = "Wystąpił nieznany błąd.";
+                        break;
+                }
+            }
+            
+            function getLocation() {        
+                if (navigator.geolocation) {
+                    var options = {timeout: 60000};
+                    navigator.geolocation.getCurrentPosition(
+                    showLocation,
+                    errorHandler,
+                    options);
+                } else { alert("Twoja przeglądarka nie wspiera geolokalizacji!");}
+            }
+        </script>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand " href="index.html">Strona główna</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Miasta</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                                    <li><a class="dropdown-item" href="index.html#krakow">Kraków</a></li>
+                                    <li><a class="dropdown-item" href="index.html#wroclaw">Wrocław</a></li>
+                                    <li><a class="dropdown-item" href="index.html#torun">Toruń</a></li>
+                                    <li><a class="dropdown-item" href="index.html#lublin">Lublin</a></li>
+                                    <li><a class="dropdown-item" href="index.html#gdansk">Gdańsk</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                            <li class="nav-item"><a class="nav-link" href="odleglosci.html">Sprawdz odległość</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Podziel się opinią!</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio2">
+                                    <li><a class="dropdown-item" href="formularz.html#formularz">Dodaj swoją opinię</a></li>
+                                    <li><a class="dropdown-item" href="formularz.html#wszystkieFormularze">Zobacz swoje opinię</a></li>
+                                </ul>
+                            </li> 
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page Content-->
+            <section class="py-5">
+                <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="text-center mb-5">
+                            <div class=" bg-primary bg-gradient text-white rounded-3 mb-3"></div>
+                            <br/><h2 class="fw-bolder">Geolokacja</h2>
+                            <p class="lead fw-normal text-muted mb-0">Jest to aplikacja, która na podstawie szerokości i długości geograficznej oblicza przybliżoną odległość do wymienionych miast (w linii prostej).</p>
+                        </div>
+                        <div class="col-lg-8 col-xl-6">
+                            <div class="text-center">
+                                 <div class="form-floating mb-3">
+                                    <h5>Twoje współrzędne</h5>
+                                    <input class="form-control text-center" id="geo" disabled type="text" />
+                                 </div>
+                            </div>
+                            <div class="text-center">
+                                 <div class="form-floating mb-3">
+                                    <h5>Kraków</h5>
+                                    <input class="form-control text-center" id="odlkrakow" disabled type="text" />
+                                 </div>
+                            </div>
+                            <div class="text-center">
+                                 <div class="form-floating mb-3">
+                                    <h5>Wrocław</h5>
+                                    <input class="form-control text-center" id="odlwroclaw" disabled type="text" />
+                                 </div>
+                            </div>
+                            <div class="text-center">
+                                 <div class="form-floating mb-3">
+                                     <h5>Toruń</h5>
+                                    <input class="form-control text-center" id="odltorun" disabled type="text" />
+                                 </div>
+                            </div>
+                            <div class="text-center">
+                                 <div class="form-floating mb-3">
+                                    <h5>Lublin</h5>
+                                    <input class="form-control text-center" id="odllublin" disabled type="text" />
+                                 </div>
+                            </div>
+                            <div class="text-center">
+                                 <div class="form-floating mb-3">
+                                    <h5>Gdańsk</h5>
+                                    <input class="form-control text-center" id="odlgdansk" disabled type="text" />
+                                 </div>
+                            </div>
+                            <div class="text-center">
+                                 <div class="form-floating mb-3">
+                                    <button class='btn btn-primary' onclick="getLocation()" >Sprawdz działanie</button>
+                                 </div>
+                            </div>  
+                            
+                           <div >
+                                 <div id="mapka"></div>
+                           </div>
+                           
+                        </div>
+                    </div>  
+                </div>
+            </section>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; Jakub Fornal</p>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+    </body>
+</html>
+

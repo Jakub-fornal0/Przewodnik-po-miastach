@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content />
+        <meta name="author" content />
+        <title>Szlakiem najpiękniejszych polskich miast</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="js/scripts.js"></script>
+    </head>
+    <body class="d-flex flex-column">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand " href="index.html">Strona główna</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Miasta</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                                    <li><a class="dropdown-item" href="index.html#krakow">Kraków</a></li>
+                                    <li><a class="dropdown-item" href="index.html#wroclaw">Wrocław</a></li>
+                                    <li><a class="dropdown-item" href="index.html#torun">Toruń</a></li>
+                                    <li><a class="dropdown-item" href="index.html#lublin">Lublin</a></li>
+                                    <li><a class="dropdown-item" href="index.html#gdansk">Gdańsk</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                            <li class="nav-item"><a class="nav-link" href="odleglosci.html">Sprawdz odległość</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Podziel się opinią!</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio2">
+                                    <li><a class="dropdown-item" href="#formularz">Dodaj swoją opinię</a></li>
+                                    <li><a class="dropdown-item" href="#wszystkieFormularze">Zobacz swoje opinię</a></li>
+                                </ul>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <section class="py-5">
+                <div class="container px-5">
+                    <!-- Contact form-->
+                    <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
+                        <div id="formularz" class="text-center mb-5">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+                            <h1 class="fw-bolder">Podziel się swoją opinią!</h1>
+                            <p class="lead fw-normal text-muted mb-0">Opisz miasto, które odwiedziłeś</p>
+                        </div>
+                        
+                        <div class="row gx-5 justify-content-center">
+                            <div class="col-lg-8 col-xl-6">
+                                <form  onsubmit="return dodaj()">
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="imie" type="text" />
+                                        <label for="imie">Imię</label>
+                                        <p id="imie_error" style="color:red"></p>
+                                    </div>
+                                    
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="nazwisko" type="text" />
+                                        <label for="nazwisko">Nazwisko</label>
+                                        <p id="nazwisko_error" style="color:red"></p>
+                                    </div>                                    
+                                    
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="email" type="text" />
+                                        <label for="email">Email</label>
+                                        <p id="email_error" style="color:red"></p>
+                                    </div>
+                                    
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="numertel" type="tel" />
+                                        <label for="numertel">Numer telefonu</label>
+                                        <p id="numertel_error" style="color:red"></p>
+                                    </div>
+ 
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="data" type="month" />
+                                        <label for="data">Data</label>
+                                        <p id="data_error" style="color:red"></p>
+                                    </div> 
+                                    
+                                    <div class="text-center">
+                                        <br/><label for="miasto">Wybierz miasto, które odwiedziłeś:</label>
+                                        <select size="1" name="miasto" id="miasto">
+                                            <option value="Kraków" selected>Kraków</option>
+                                            <option value="Wrocław">Wrocław</option>
+                                            <option value="Toruń">Toruń</option>
+                                            <option value="Lublin">Lublin</option>
+                                            <option value="Gdańsk">Gdańsk</option>
+                                        </select>
+                                    </div>
+                                                                      
+                                    <div class="text-center">
+                                        <br/><p class="text-center">Jak oceniasz swój pobyt w tym mieście:</p>
+                                        <p class="btn btn-outline-primary"> 
+                                          <input type="radio" name="ocena" id="zero" value="0" />0
+                                        </p>
+                                        <p class="btn btn-outline-primary">
+                                          <input type="radio" name="ocena" id="jeden" value="1" />1
+                                        </p>
+                                        <p class="btn btn-outline-primary">
+                                          <input type="radio" name="ocena" id="dwa" value="2" />2
+                                        </p>
+                                        <p class="btn btn-outline-primary">
+                                          <input type="radio" name="ocena" id="trzy" value="3" />3
+                                        </p>
+                                        <p class="btn btn-outline-primary">
+                                          <input type="radio" name="ocena" id="cztery" value="4" />4
+                                        </p>
+                                        <p class="btn btn-outline-primary">
+                                          <input type="radio" name="ocena" id="pięć" value="5" />5
+                                        </p>
+                                        <p id="ocena_error" style="color:red"></p>
+                                    </div>
+                                    
+                                    <div class="text-center"> 
+                                        <br/><p class="text-center">Co oceniasz pozytywnie:</p>
+                                        <p class="btn btn-outline-primary">
+                                          <input name="pozytywnie" type="checkbox" value="Nic" /> Nic 
+                                        </p>
+                                        <p class="btn btn-outline-primary">
+                                          <input name="pozytywnie" type="checkbox" value="Zabytki" /> Zabytki
+                                        </p>
+                                        <p class="btn btn-outline-primary">
+                                          <input name="pozytywnie" type="checkbox" value="Zieleń" /> Zieleń
+                                        </p>
+                                        <p class="btn btn-outline-primary">
+                                          <input name="pozytywnie" type="checkbox" value="Ceny" /> Ceny
+                                        </p>
+                                        <p class="btn btn-outline-primary">
+                                          <input name="pozytywnie" type="checkbox" value="Czystość" /> Czystość
+                                        </p>
+                                        <p id="pozytywne_error" style="color:red"></p>                                        
+                                    </div>
+                                    
+                                    <div class="text-center">
+                                        <br/><p class="text-center">Co oceniasz negatywnie:</p>
+                                        <p class="btn btn-outline-primary">
+                                          <input name="negatywnie" type="checkbox" value="Nic" /> Nic 
+                                        </p>
+                                        <p class="btn btn-outline-primary">
+                                          <input name="negatywnie" type="checkbox" value="Zabytki" /> Zabytki
+                                        </p>
+                                        <p class="btn btn-outline-primary">
+                                          <input name="negatywnie" type="checkbox" value="Zieleń" /> Zieleń
+                                        </p>
+                                        <p class="btn btn-outline-primary">
+                                          <input name="negatywnie" type="checkbox" value="Ceny" /> Ceny
+                                        </p>
+                                        <p class="btn btn-outline-primary">
+                                          <input name="negatywnie" type="checkbox" value="Czystość" /> Czystość
+                                        </p> 
+                                        <p id="negatywne_error" style="color:red"></p>                                         
+                                    </div>
+
+                                    
+                                    <div class="text-center">
+                                        <br /><label for="komentarz">Komentarz:</label>
+                                        <textarea class="form-control" id="komentarz" rows="3"></textarea>
+                                        <p id="komentarz_error" style="color:red"></p> 
+                                    </div>
+                                    
+                                    <div class="text-center"> 
+                                        <br /><input class="btn btn-outline-success" type="submit" value="Dodaj" />
+                                          <input class="btn btn-outline-danger" type="reset" value="Wyczyść" />
+                                    </div> 
+                                </form>                                     
+                            </div>
+                        </div>      
+                    </div>
+                    
+                    <div id="wszystkieFormularze" class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
+                        <div class="text-center mb-5">
+                            <div class=" bg-primary bg-gradient text-white rounded-3 mb-3"></div>
+                            <br/><h2 class="fw-bolder">Tutaj znajdziesz swoje poprzednio dodane opinie!</h2>
+                            <br/><button type="button" class="btn btn-outline-dark" onclick="pokazOpinie()">Sprawdź swoje opinie</button>
+                        </div>
+                        
+                        <div id="miejsceNaOpinie"></div>
+                    </div>   
+                </div>
+            </section>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; Jakub Fornal</p>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+
+    </body>
+</html>

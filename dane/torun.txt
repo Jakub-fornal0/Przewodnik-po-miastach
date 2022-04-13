@@ -1,0 +1,22 @@
+ <section class="py-5">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="text-center mb-5">
+                                <h1 class="fw-bolder">Toruń</h1>
+                                <p class="lead fw-normal text-muted mb-0">Gotyk na dotyk</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gx-5">
+                        <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="zdjecia/torun1300x700.jpg" alt="..." /></div>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="text-center mb-5">
+                                <p class="lead fw-normal text-muted">Toruń to miasto o ciekawym położeniu geograficznym. Znajdujące się w województwie kujawsko-pomorskim, prawobrzeżną częścią leży na Pomorzu, lewobrzeżną natomiast na Kujawach. Jako jedno z najstarszych miast polskich, w 1997 roku toruński zespół staromiejski został wpisany na Listę Światowego Dziedzictwa Kulturowego UNESCO. Obecnie Toruń nastawiony jest przede wszystkim na turystykę. Do głównych atrakcji miasta należy z pewnością Rynek Staromiejski, którego obszar został ustanowiony w latach 1252-1259. W jego centrum znajduje się wielokrotnie przebudowywany gotycki Ratusz, pochodzący z czasów ok. XIII wieku. Pierwsze skojarzenia z miastem tym są dwa: Kopernik i pierniki. Jako miejsce narodzin słynnego astronoma Toruń dba o to, aby ten historyczny fakt nie był zapomniany. Poza pomnikiem poświęconym tej postaci, zwiedzić można Dom Mikołaja Kopernika. W kamienicy należącej do jego rodziny, gdzie prawdopodobnie uczony przyszedł na świat, znajduje się muzeum. Można tu obejrzeć wyposażenie pracowni astronoma oraz typowe wnętrza z czasów od XV do XVII wieku. Warto odwiedzić także Żywe Muzeum Piernika, mieszczące się w kamienicy w centrum miasta. Na dwóch poziomach ekspozycji przedstawione są różne epoki historyczne – średniowiecze oraz okres rewolucji przemysłowej i powstawania manufaktur. Zwiedzający mogą samodzielnie zrobić własne pierniki według dawnych sposobów. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>

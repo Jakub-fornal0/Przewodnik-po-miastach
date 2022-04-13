@@ -1,0 +1,22 @@
+<section class="py-5">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="text-center mb-5">
+                                <h1 class="fw-bolder">Lublin</h1>
+                                <p class="lead fw-normal text-muted mb-0">Miasto inspiracji</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gx-5">
+                        <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="zdjecia/lublin1300x700.jpg" alt="..." /></div>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="text-center mb-5">
+                                <p class="lead fw-normal text-muted">Lublin nazywany stolicą wschodniej Polski jest największym i najprężniej rozwijającym się miastem po prawej stronie Wisły. Jako stolica województwa lubelskiego pełni rolę administracyjnego, gospodarczego i kulturalnego centrum regionu. Bogata, siedmiowiekowa historia Lublina oraz położenie w wielokulturowym tyglu stanowią o jego szczególnych walorach. To zaczarowane miejsce przyciągające unikalnym klimatem, bogatą architekturą i licznymi zabytkami. Odbywają się tu renomowane międzynarodowe wydarzenia artystyczne, festiwale teatralne, muzyczne i prezentujące sztukę współczesną. Zwiedzanie zabytków Lublina to fascynująca podróż przez stulecia. Sylwetka Zamku Lubelskiego, wspaniałe kamienice i zaułki zachęcają do pozostania na dłużej w mieście, którego historię kształtowało położenie na pograniczu wschodniego i zachodniego chrześcijaństwa. Ślady i wpływy tego wielokulturowego i wieloreligijnego bogactwa ukazuje architektura i miejsca, które trzeba zobaczyć by, poznać duszę miasta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
